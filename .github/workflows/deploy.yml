@@ -3,7 +3,12 @@ name: Deploy Vite Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # runs only when pushing to main branch
+      - main
+
+permissions:
+  contents: write   # 👈 allow GitHub Actions to push to gh-pages branch
+  pages: write
+  id-token: write
 
 jobs:
   build-deploy:
