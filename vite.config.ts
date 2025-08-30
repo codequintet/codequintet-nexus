@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./", // 👈 IMPORTANT for GitHub Pages
+  base: "/codequintet-nexus/", // 👈 IMPORTANT for GitHub Pages - should match repository name
   server: {
     host: "::",
     port: 8080,

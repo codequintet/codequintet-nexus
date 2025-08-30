@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeQuintet - Innovating Tech, Empowering Impact</title>
+    <script>
+      // Redirect to index.html for client-side routing on GitHub Pages
+      const pathSegmentsToKeep = 1;
+      const path = window.location.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/');
+      const query = window.location.search;
+      const hash = window.location.hash;
+      window.location.replace('/codequintet-nexus/' + (path && path + '/') + (query || '') + (hash || ''));
+    </script>
+  </head>
+  <body>
+    <div>Redirecting...</div>
+  </body>
+</html>
